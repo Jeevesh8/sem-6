@@ -88,7 +88,8 @@ void first(vector<string>& grammar)
         {
             char ch=rule[0];
 
-            for(size_t i=0; i<rule.length(); ++i)
+            size_t i=0;
+            for(; i<rule.length(); ++i)
             {   
                 if(i<2)
                     continue;
@@ -108,6 +109,10 @@ void first(vector<string>& grammar)
                         break;
                     }
                 }
+            }
+            if(i==rule.length())
+            {
+                first_elems[ch].insert(epsilon);
             }
         }       
     }
