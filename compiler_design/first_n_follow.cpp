@@ -5,11 +5,9 @@
 #include<set>
 #include<map>
 
-using namespace std;
+#include "first_n_follow.h"
 
-char epsilon= 'e';
-char right_end_marker = '$';
-char start_symbol = 'E';
+using namespace std;
 
 bool is_terminal(char ch)
 {
@@ -67,7 +65,7 @@ vector<string> filter_grammar(vector<string>& grammar, char non_terminal)
     return relevant_rules;
 }
 
-void print_map(map<char, set<char>>& elems, string prefix="FIRST(")
+int print_map(map<char, set<char>>& elems, string prefix)
 {
     for(auto& elem: elems)
     {
@@ -78,6 +76,7 @@ void print_map(map<char, set<char>>& elems, string prefix="FIRST(")
         }
         cout<<"}\n";
     }
+    return 0;
 }
 
 
