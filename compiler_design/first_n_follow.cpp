@@ -11,7 +11,7 @@ using namespace std;
 
 bool is_terminal(char ch)
 {
-    if(islower(ch) || ch==epsilon)
+    if( ! isupper(ch) || ch==epsilon)
         return true;
     return false;
 }
