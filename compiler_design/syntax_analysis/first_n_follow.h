@@ -8,9 +8,9 @@ using namespace std;
 #ifndef __FIRST_N_FOLLOW_INCLUDED__
 #define __FIRST_N_FOLLOW_INCLUDED__
 
-extern char epsilon='e';
-extern char right_end_marker='$';
-extern char start_symbol='S';
+extern char epsilon;
+extern char right_end_marker;
+extern char start_symbol;
 
 bool is_terminal(char ch);
 bool is_non_terminal(char ch);

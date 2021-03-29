@@ -8,7 +8,6 @@
 #include<stack>
 
 #include "parsers.h"
-#include "first_n_follow.cpp"
 
 using namespace std;
 

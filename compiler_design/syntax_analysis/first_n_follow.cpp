@@ -7,6 +7,10 @@
 
 #include "first_n_follow.h"
 
+extern char epsilon='e';
+extern char right_end_marker='$';
+extern char start_symbol='S';
+
 using namespace std;
 
 bool is_terminal(char ch)
